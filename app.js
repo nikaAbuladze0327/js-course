@@ -1,22 +1,41 @@
-// if else statement homework
-let score = 100;
+// N1
+let testfunc = (...number) => {
+  let num = 0;
+  for (let item of number) {
+    num += item;
+  }
+  console.log(num);
+};
+testfunc(10, 50, 6, 7, 8, 11, 6, 3, 9);
 
-if (score < 50) {
-  console.log("ნაკლებია 50-ზე");
-} else if (score > 20) {
-  console.log("მეტია 20-ზე");
-} else {
-  console.log("შეცდომა");
+//N2
+let user = {
+  firstname: "giorgi",
+  lastname: "saakadze",
+  isloggedin: true,
+};
+
+for (let item2 in user) {
+  if (user.isloggedin === true) {
+    console.log(`${user.firstname} ${user.lastname}`);
+  } else {
+    console.log(false);
+  }
 }
+//N3
+let testfunc2 = (...number2) => {
+  console.log(Math.max(...number2));
+};
 
-// if mari homework
-let userName = "მარი";
+testfunc2(10, 23, 44, 26, 145, 30);
+//N4
 
-if (userName === "მარი") {
-  console.log("true");
-} else {
-  console.log("false");
-}
+let testfunc3 = (a) => {
+  if (a % 2 === 0) {
+    console.log("this number is even");
+  } else {
+    console.log("this number is odd");
+  }
+};
 
-// switch case homework
-let userName2 = "მარი" === "მარი" ? console.log("true") : console.log("false");
+testfunc3(22);
