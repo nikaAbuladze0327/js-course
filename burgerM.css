@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(32, 244, 244);
+  font-family: "Courier New", Courier, monospace;
+}
+strong {
+  margin-left: 10px;
+}
+li {
+  list-style: none;
+  color: white;
+  cursor: pointer;
+  padding-top: 30px;
+  transition: all 0.5s ease-in-out;
+}
+li:hover {
+  color: cyan;
+  font-size: 24px;
+}
+li:active {
+  color: yellow;
+}
+#target {
+  z-index: 2;
+  width: 70px;
+  height: 20px;
+  background-color: yellow;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+#target.active {
+  overflow: visible;
+  text-align: center;
+  background-color: blue;
+  display: inline;
+  color: rgb(255, 255, 255);
+}
+#options {
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  padding-top: 20px;
+  transition: all 0.5s ease-in-out;
+}
+#options.optA {
+  opacity: 1;
+  visibility: visible;
+  padding-top: 200px;
+  background-color: darkblue;
+}
